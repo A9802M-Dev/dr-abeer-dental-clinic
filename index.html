@@ -1,0 +1,656 @@
+html
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- =========================================
+         Meta
+    ========================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>عيادة الدكتورة عبير أمين عثمان | طب الأسنان</title>
+
+    <meta
+      name="description"
+      content="الموقع الرسمي لعيادة الدكتورة عبير أمين عثمان، نقدم خدمات طب الأسنان الحديثة بأعلى معايير الجودة والعناية الصحية للحصول على ابتسامة صحية وجميلة."
+    />
+    <meta
+      name="keywords"
+      content="طبيبة أسنان, عيادة أسنان, عبير أمين عثمان, تجميل الأسنان, زراعة الأسنان, تنظيف الأسنان, علاج الأسنان"
+    />
+    <meta name="author" content="Dr. Abeer Amin Othman" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="عيادة الدكتورة عبير أمين عثمان" />
+    <meta
+      property="og:description"
+      content="خدمات متكاملة في طب الأسنان بأحدث التقنيات الطبية."
+    />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:image" content="assets/images/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="عيادة الدكتورة عبير أمين عثمان" />
+    <meta name="twitter:description" content="ابتسامتك تبدأ من هنا." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://example.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Open Graph إضافية -->
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:site_name" content="اسم العيادة" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="اسم العيادة | Dental Clinic" />
+    <meta
+      name="twitter:description"
+      content="ابتسامة صحية تبدأ من هنا - خدمات طب الأسنان بأحدث التقنيات."
+    />
+    <meta name="twitter:image" content="images/og-image.jpg" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Preconnect (Optional Future Use) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "عيادة د. عبير عثمان",
+        "description": "عيادة متخصصة في طب الأسنان تقدم خدمات علاجية وتجميلية بأحدث التقنيات في مدينة حمص، سوريا.",
+        "telephone": "+963939691650",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "حمص",
+          "addressCountry": "SY"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "حمص"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content"> الانتقال مباشرة إلى المحتوى </a>
+    <!-- =========================================
+         Site Header
+    ========================================== -->
+    <header class="site-header">
+      <section class="site-header__branding">
+        <h1 class="site-header__title">
+          <a href="#hero" class="site-header__logo">
+            <img
+              src="assets/images/logo/dr abeer.png"
+              alt="شعار عيادة الدكتورة عبير أمين عثمان"
+            />
+          </a>
+        </h1>
+      </section>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="فتح القائمة"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        data-action="toggle-menu"
+      >
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
+
+      <!-- Main Navigation -->
+      <nav
+        id="primary-navigation"
+        class="site-navigation"
+        aria-label="القائمة الرئيسية"
+      >
+        <ul class="site-navigation__list">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#hero" data-nav-link>
+              الرئيسية
+            </a>
+          </li>
+
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#about" data-nav-link>
+              عن الطبيبة
+            </a>
+          </li>
+
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#services" data-nav-link>
+              الخدمات
+            </a>
+          </li>
+
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#why-us" data-nav-link>
+              لماذا نحن
+            </a>
+          </li>
+
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#testimonials" data-nav-link>
+              آراء المرضى
+            </a>
+          </li>
+
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#contact" data-nav-link
+              >اتصل بنا</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Site Header -->
+    <div class="navigation-overlay" hidden aria-hidden="true"></div>
+
+    <!-- =========================================
+         Main Content
+    ========================================== -->
+    <main id="main-content">
+      <!-- =====================================
+             Hero Section
+        ====================================== -->
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <header class="hero__header">
+          <h2 id="hero-title" class="hero__title">
+            ابتسامة صحية تبدأ مع الرعاية الصحيحة
+          </h2>
+
+          <p class="hero__description">
+            نقدم خدمات طب الأسنان بأحدث التقنيات الطبية مع اهتمام كامل براحة
+            المريض وجودة العلاج.
+          </p>
+        </header>
+
+        <div class="hero__actions" role="group" aria-label="الإجراءات الرئيسية">
+          <a
+            class="hero__button hero__button--primary"
+            href="#contact"
+            data-button="primary"
+            >احجز موعداً
+          </a>
+
+          <a
+            class="hero__button hero__button--secondary"
+            href="#services"
+            data-button="secondary"
+          >
+            استكشف الخدمات
+          </a>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+
+      <!-- =====================================
+             About Doctor
+        ====================================== -->
+      <section id="about" class="about" aria-labelledby="about-title">
+        <header class="about__header">
+          <h2 id="about-title">عن الدكتورة</h2>
+        </header>
+
+        <article class="about__content section-container">
+          <h3 class="about__name">الدكتورة عبير أمين عثمان</h3>
+
+          <p class="about__text">
+            الدكتورة عبير أمين عثمان هي طبيبة أسنان حاصلة على درجة البكالوريوس
+            في طب الأسنان من جامعة الحواش الخاصة، وتتمتع بخبرة تمتد لأربع سنوات
+            في تقديم مختلف خدمات طب الأسنان.
+          </p>
+
+          <p class="about__text">
+            العلاج الناجح يبدأ بالاستماع الجيد للمريض، وفهم احتياجاته، وتهيئة
+            بيئة يشعر فيها بالراحة والاطمئنان قبل البدء بأي إجراء علاجي. لذلك
+            تحرص على تقديم رعاية قائمة على الدقة، والاهتمام بالتفاصيل، والتواصل
+            الواضح مع كل مريض.
+          </p>
+
+          <p class="about__text">
+            تسعى الدكتورة عبير إلى تقديم رعاية متكاملة باستخدام الأساليب الحديثة
+            في طب الأسنان، مع التركيز على الحفاظ على صحة الفم والأسنان وتحقيق
+            أفضل النتائج العلاجية بما يتناسب مع احتياجات كل مريض.
+          </p>
+        </article>
+      </section>
+      <!-- End About Doctor -->
+
+      <!-- =====================================
+     Services
+====================================== -->
+      <section id="services" class="services" aria-labelledby="services-title">
+        <header class="services__header section-header">
+          <h2 id="services-title">خدمات طب الأسنان</h2>
+          <p class="section-header__description">
+            نقدم مجموعة من خدمات طب الأسنان التشخيصية والعلاجية والتجميلية، مع
+            الحرص على اختيار الخطة العلاجية المناسبة لكل مريض وفق احتياجاته
+            الصحية.
+          </p>
+        </header>
+
+        <div class="services__grid section-container">
+          <article class="services__item card">
+            <h3 class="services__title card__title">تنظيف الأسنان</h3>
+
+            <p class="services__description card__description">
+              إزالة الترسبات الجيرية والتصبغات للمساعدة في الحفاظ على صحة اللثة
+              والأسنان ومنح ابتسامة أكثر نظافة وإشراقًا.
+            </p>
+          </article>
+          <article class="services__item card">
+            <h3 class="services__title card__title">حشوات تجميلية</h3>
+
+            <p class="services__description card__description">
+              إصلاح الأسنان المتضررة باستخدام حشوات تجميلية بلون الأسنان الطبيعي
+              للحفاظ على المظهر والوظيفة
+            </p>
+          </article>
+
+          <article class="services__item card">
+            <h3 class="services__title card__title">المعالجة اللبية</h3>
+
+            <p class="services__description card__description">
+              علاج التهابات وألم عصب السن مع المحافظة على السن الطبيعي قدر
+              الإمكان
+            </p>
+          </article>
+
+          <article class="services__item card">
+            <h3 class="services__title card__title">إعادة المعالجة اللبية</h3>
+
+            <p class="services__description card__description">
+              إعادة علاج قنوات الجذور للحالات التي تحتاج إلى معالجة إضافية بهدف
+              الحفاظ على السن
+            </p>
+          </article>
+
+          <article class="services__item card">
+            <h3 class="services__title card__title">القلع</h3>
+
+            <p class="services__description card__description">
+              قلع الأسنان التي يتعذر علاجها بطريقة آمنة مع الحرص على راحة المريض
+              أثناء الإجراء.
+            </p>
+          </article>
+
+          <article class="services__item card">
+            <h3 class="services__title card__title">الجراحة البسيطة</h3>
+
+            <p class="services__description card__description">
+              إجراء الجراحات الفموية البسيطة وفق تقييم الحالة وباستخدام أساليب
+              علاجية مناسبة
+            </p>
+          </article>
+
+          <article class="services__item card">
+            <h3 class="services__title card__title">تيجان الخزف</h3>
+
+            <p class="services__description card__description">
+              ترميم الأسنان بتيجان خزفية تمنح مظهرًا طبيعيًا ووظيفة جيدة للأسنان
+            </p>
+          </article>
+          <article class="services__item card">
+            <h3 class="services__title card__title">تيجان الزيركون</h3>
+
+            <p class="services__description card__description">
+              تركيبات من الزيركون تتميز بالقوة والمظهر الجمالي لتناسب الأسنان
+              الأمامية والخلفية.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- End Services -->
+
+      <!-- =====================================
+             Why Choose Us
+        ====================================== -->
+      <section id="why-us" class="why-us" aria-labelledby="why-us-title">
+        <header class="why-us__header section-header">
+          <h2 id="why-us-title">لماذا تختار عيادتنا؟</h2>
+        </header>
+        <div class="why-us__grid section-container">
+          <article class="why-us__item card">
+            <h3 class="card__title">خبرة طبية</h3>
+            <p class="card__description">
+              خبرة واسعة في مختلف مجالات طب الأسنان.
+            </p>
+          </article>
+
+          <article class="why-us__item card">
+            <h3 class="card__title">أجهزة حديثة</h3>
+            <p class="card__description">
+              استخدام أحدث التقنيات والأجهزة الطبية.
+            </p>
+          </article>
+
+          <article class="why-us__item card">
+            <h3 class="card__title">رعاية شخصية</h3>
+            <p class="card__description">
+              الاهتمام بكل مريض وفق احتياجاته الصحية.
+            </p>
+          </article>
+
+          <article class="why-us__item card">
+            <h3 class="card__title">بيئة مريحة</h3>
+            <p class="card__description">
+              توفير أجواء هادئة ومريحة أثناء العلاج.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- End Why Choose Us -->
+
+      <!-- =====================================
+     Testimonials
+====================================== -->
+      <section
+        id="testimonials"
+        class="testimonials"
+        aria-labelledby="testimonials-title"
+      >
+        <header class="testimonials__header section-header">
+          <h2 id="testimonials-title">آراء المرضى</h2>
+        </header>
+
+        <div class="testimonials__grid section-container">
+          <article class="testimonial card">
+            <blockquote class="testimonial__quote card__description">
+              تعامل راقٍ واهتمام كبير براحة المريض. كانت تجربة العلاج مريحة
+              والنتيجة ممتازة، وأنصح بكل ثقة بزيارة العيادة.
+            </blockquote>
+
+            <footer class="testimonial__author">— مصطفى</footer>
+          </article>
+
+          <article class="testimonial card">
+            <blockquote class="testimonial__quote card__description">
+              الدكتورة عبير دقيقة جدًا في عملها وتشرح خطة العلاج بكل وضوح، وشعرت
+              بالاطمئنان منذ أول زيارة.
+            </blockquote>
+
+            <footer class="testimonial__author">— عدد من المرضى</footer>
+          </article>
+        </div>
+      </section>
+      <!-- End Testimonials -->
+      <!-- =====================================
+     Contact
+====================================== -->
+      <section
+        id="contact"
+        class="contact"
+        aria-labelledby="contact-title"
+        data-module="contact"
+      >
+        <div class="container">
+          <header class="contact__header section-header">
+            <h2 id="contact-title">احجز موعدك</h2>
+
+            <p class="contact__intro">
+              يسعدنا استقبال استفساراتكم وحجوزاتكم. املأ النموذج التالي وسنتواصل
+              معك في أقرب وقت.
+            </p>
+          </header>
+
+          <div class="contact__content section-container">
+            <!-- معلومات التواصل -->
+            <address class="contact__details card">
+              <div class="contact__info">
+                <article class="contact__card">
+                  <h3 class="card__title">الهاتف</h3>
+
+                  <a href="tel:+963939691650" dir="ltr" class="contact__phone">
+                    +963 939 691 650
+                  </a>
+                </article>
+
+                <article class="contact__card">
+                  <h3 class="card__title">الموقع</h3>
+
+                  <p class="card__description">حمص - سوريا</p>
+                </article>
+
+                <article class="contact__card">
+                  <h3>ساعات العمل</h3>
+
+                  <ul class="contact__hours">
+                    <li>
+                      <strong>أيام الدوام:</strong> السبت، الأحد، الاثنين،
+                      الأربعاء، الخميس
+                    </li>
+                    <li>
+                      <strong>ساعات العمل:</strong> 09:00 صباحًا – 03:00 عصرًا
+                    </li>
+                    <li><strong>العطلة الأسبوعية:</strong> الثلاثاء والجمعة</li>
+                  </ul>
+                </article>
+              </div>
+            </address>
+
+            <!-- نموذج الحجز -->
+            <form
+              id="booking-form"
+              class="booking-form card"
+              novalidate
+              autocomplete="on"
+              data-module="booking"
+            >
+              <div class="form-field">
+                <label for="full-name"> الاسم الكامل </label>
+
+                <input
+                  id="full-name"
+                  name="fullName"
+                  type="text"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="phone"> رقم الهاتف </label>
+
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  required
+                  inputmode="tel"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="service"> الخدمة المطلوبة </label>
+
+                <select id="service" name="service" required>
+                  <option value="">اختر الخدمة المطلوبة</option>
+
+                  <option>تنظيف الأسنان</option>
+
+                  <option>الحشوات التجميلية</option>
+
+                  <option>المعالجة اللبية (علاج العصب)</option>
+
+                  <option>إعادة المعالجة اللبية</option>
+
+                  <option>القلع</option>
+
+                  <option>الجراحة البسيطة</option>
+
+                  <option>تيجان الخزف</option>
+
+                  <option>تيجان الزيركون</option>
+
+                  <option>استشارة</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="message"> ملاحظات </label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  maxlength="600"
+                  autocomplete="off"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="hero__button hero__button--primary"
+                data-action="booking-submit"
+              >
+                إرسال طلب الحجز
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact -->
+
+      <!-- =====================================
+             Google Maps
+        ====================================== -->
+      <section id="map" class="map" aria-labelledby="map-title">
+        <header class="map__header">
+          <h2 id="map-title">موقع العيادة</h2>
+
+          <p class="section-description">
+            يمكنكم الوصول إلى العيادة مباشرة عبر خرائط Google.
+          </p>
+        </header>
+
+        <div class="map__placeholder">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3133.149912820482!2d36.4611082!3d34.7484835!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDQ0JzU0LjQiTiAzNsKwMjcnMzkuNCJF!5e1!3m2!1sar!2snl!4v1785711941135!5m2!1sar!2snl"
+            width="100%"
+            height="500"
+            style="border: 0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="موقع عيادة الدكتورة عبير أمين عثمان"
+          >
+          </iframe>
+        </div>
+      </section>
+      <!-- End Google Maps -->
+    </main>
+    <!-- End Main Content -->
+    <button
+      id="back-to-top"
+      class="back-to-top"
+      type="button"
+      hidden
+      aria-label="العودة إلى أعلى الصفحة"
+      data-action="back-to-top"
+    ></button>
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/963967969524?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%A3%D9%88%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="راسلنا عبر واتساب"
+    >
+      <span class="whatsapp-float__icon" aria-hidden="true">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          width="34"
+          height="34"
+          fill="currentColor"
+        >
+          <path
+            d="M16.01 3C8.83 3 3 8.73 3 15.79c0 2.49.73 4.91 2.12 6.98L3 29l6.42-2.04a13.2 13.2 0 0 0 6.59 1.78c7.18 0 13.01-5.73 13.01-12.79C29.02 8.73 23.19 3 16.01 3Zm0 23.44a10.9 10.9 0 0 1-5.56-1.53l-.4-.24-3.81 1.21 1.25-3.69-.26-.38a10.53 10.53 0 0 1-1.66-5.66c0-5.84 4.74-10.59 10.57-10.59s10.57 4.75 10.57 10.59-4.74 10.59-10.57 10.59Zm5.8-7.91c-.32-.16-1.91-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.21.31-.83 1.05-1.01 1.27-.19.21-.37.24-.69.08-.32-.16-1.35-.49-2.58-1.56-.95-.83-1.6-1.86-1.79-2.18-.19-.31-.02-.48.14-.64.15-.15.32-.39.48-.58.16-.19.21-.31.32-.52.11-.21.05-.39-.03-.55-.08-.16-.73-1.75-1-2.4-.27-.65-.54-.56-.73-.57h-.62c-.21 0-.55.08-.84.39-.29.31-1.11 1.08-1.11 2.63s1.14 3.05 1.3 3.26c.16.21 2.24 3.41 5.42 4.78.76.33 1.36.53 1.82.67.76.24 1.45.21 2 .13.61-.09 1.91-.78 2.18-1.54.27-.76.27-1.41.19-1.54-.08-.13-.29-.21-.61-.37Z"
+          />
+        </svg>
+      </span>
+    </a>
+    <div>
+      <div
+        id="toast-container"
+        class="toast-container"
+        aria-live="polite"
+        aria-atomic="true"
+      ></div>
+    </div>
+    <div
+      id="modal"
+      class="modal"
+      hidden
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal__overlay"></div>
+
+      <div class="modal__content">
+        <button class="modal__close" type="button" aria-label="إغلاق النافذة">
+          ×
+        </button>
+
+        <div class="modal__body"></div>
+      </div>
+    </div>
+    <!-- =========================================
+     Footer
+========================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__content">
+          <p class="site-footer__copyright">
+            &copy; 2026 عيادة الدكتورة عبير أمين عثمان. جميع الحقوق محفوظة.
+          </p>
+          <p class="site-footer__credit">
+            Powered &amp; Developed by <strong>A9802M</strong>
+          </p>
+
+          <nav class="site-footer__navigation" aria-label="روابط التذييل">
+            <ul class="site-footer__list">
+              <li>
+                <a class="site-footer__link" href="#hero"> الرئيسية </a>
+              </li>
+
+              <li>
+                <a class="site-footer__link" href="#about"> عن الطبيبة </a>
+              </li>
+
+              <li>
+                <a class="site-footer__link" href="#services"> الخدمات </a>
+              </li>
+
+              <li>
+                <a class="site-footer__link" href="#contact"> احجز موعدًا </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- =========================================
+         JavaScript
+    ========================================== -->
+    <script src="script.js"></script>
+  </body>
+</html>
+```
