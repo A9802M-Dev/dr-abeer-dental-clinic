@@ -53,7 +53,7 @@
   --radius-pill: 999px;
 
   /* Typography */
-  --font-family: "Tajawal", "Cairo", "Alexandria", system-ui, sans-serif;
+  --font-family: "IBM Plex Sans Arabic", system-ui, sans-serif;
   --font-size-xs: 0.8rem;
   --font-size-sm: 0.9rem;
   --font-size-base: 1rem;
@@ -646,7 +646,13 @@ p {
   display: inline-block;
   padding-bottom: 14px;
 }
+.testimonials__header h2 {
+  transform: translateX(-12px);
+}
 
+.testimonials__header h2::after {
+  transform: translateX(calc(50% + 12px));
+}
 .about__header h2::after,
 .services__header h2::after,
 .why-us__header h2::after,
@@ -655,7 +661,7 @@ p {
   position: absolute;
   right: 50%;
   bottom: 0;
-  transform: translateX(50%);
+  transform: translateX(-12px);
   width: 85px;
   height: 4px;
   border-radius: 999px;
@@ -711,6 +717,12 @@ p {
 
 .contact__details a:hover {
   color: var(--color-primary-dark);
+}
+.contact__content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 2rem;
+  align-items: start;
 }
 
 /*==================================================
@@ -1044,8 +1056,8 @@ p {
     gap: 5px;
     position: absolute;
     bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: calc(50% - 95px);
+    transform: translateX(-50%) translateY(12px);
     margin: 0;
     margin-top: 8px;
     width: 44px;
@@ -1062,6 +1074,33 @@ p {
 @media (max-width: 768px) {
   section {
     padding-block: 4rem;
+  }
+  .site-header {
+    height: 110px;
+    min-height: 110px;
+    padding: 6px 0;
+  }
+
+  .site-header__branding {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .site-header__branding h1 {
+    margin: 0;
+  }
+
+  .site-header__logo img {
+    height: 58px;
+    width: auto;
+  }
+
+  .menu-toggle {
+    bottom: 100 px;
+  }
+  .menu-toggle {
+    transform: translateY(25px);
   }
 
   .hero {
@@ -1179,5 +1218,228 @@ button:disabled {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+}
+/* =====================================
+   Recommended Product
+====================================== */
+
+.product-promotion {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.product-promotion__container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.product-promotion__image {
+  display: block;
+  width: min(100%, 560px);
+  height: auto;
+  margin: 0 auto 32px;
+  object-fit: contain;
+}
+
+.product-promotion__title {
+  margin: 0 0 14px;
+}
+
+.product-promotion__description {
+  max-width: 600px;
+  margin: 0 auto 28px;
+  line-height: 1.8;
+}
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+
+  padding: 0.85rem 1rem;
+
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 600;
+
+  color: var(--color-text);
+  background: var(--color-white);
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.booking-form textarea {
+  resize: vertical;
+}
+.site-footer__developer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  padding: 0.9rem 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.site-footer__developer-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.site-footer__developer-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.site-footer__developer-phone {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #8fd3ff;
+  text-decoration: none;
+  direction: ltr;
+  transition: opacity 0.2s ease;
+}
+
+.site-footer__developer-phone:hover {
+  opacity: 0.75;
+}
+
+/*==================================================
+    SOCIAL MEDIA
+==================================================*/
+
+.social-media {
+  padding: 3.5rem 6%;
+  background: var(--color-white);
+  border-top: 1px solid var(--color-border);
+}
+
+.social-media__content {
+  text-align: center;
+}
+
+.social-media__eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.social-media__title {
+  margin: 0 0 2rem;
+  color: var(--color-text);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 800;
+}
+
+.social-media__links {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-media__link {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  min-width: 230px;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+  color: var(--color-text);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.social-media__link:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.social-media__icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.social-media__icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.social-media__link--facebook .social-media__icon {
+  background: #1877f2;
+}
+
+.social-media__link--instagram .social-media__icon {
+  background: linear-gradient(
+    135deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+}
+
+.social-media__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  direction: ltr;
+}
+
+.social-media__text small {
+  color: var(--color-text-light);
+  font-size: 0.75rem;
+}
+
+.social-media__text strong {
+  color: var(--color-text);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  .social-media {
+    padding: 3rem 5%;
+  }
+
+  .social-media__links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media__link {
+    width: min(100%, 340px);
   }
 }
